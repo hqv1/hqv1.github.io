@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://www.viethoang.me/</loc>
-     <lastmod>2020-06-22</lastmod>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://www.viethoang.me/blog/20200623_dotnet_docker_azure_keyvault/</loc>
+     <lastmod>2020-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/software/net/libraries/</loc>
-     <lastmod>2020-06-22</lastmod>
+     <lastmod>2020-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/introduction/</loc>
-     <lastmod>2020-06-22</lastmod>
+     <lastmod>2020-06-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
