@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://www.viethoang.me/dominoes/blogs/20210309-infrastructure/">
+        <link rel="canonical" href="https://www.viethoang.me/dominoes/blogs/20210311-repository_cicd/">
       
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>2021-03-09 Infrastructure - Viet Hoang</title>
+        <title>2021-03-11 Repository and CI/CD - Viet Hoang</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#infrastructure" class="md-skip">
+        <a href="#repository-and-cicd" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              2021-03-09 Infrastructure
+              2021-03-11 Repository and CI/CD
             
           </span>
         </div>
@@ -515,6 +515,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../20210309-infrastructure/" title="2021-03-09 Infrastructure" class="md-nav__link">
+      2021-03-09 Infrastructure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -526,14 +538,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        2021-03-09 Infrastructure
+        2021-03-11 Repository and CI/CD
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="2021-03-09 Infrastructure" class="md-nav__link md-nav__link--active">
-      2021-03-09 Infrastructure
+    <a href="./" title="2021-03-11 Repository and CI/CD" class="md-nav__link md-nav__link--active">
+      2021-03-11 Repository and CI/CD
     </a>
     
       
@@ -559,35 +571,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#home-cluster" class="md-nav__link">
-    Home Cluster
-  </a>
-  
-    <nav class="md-nav" aria-label="Home Cluster">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#arm64" class="md-nav__link">
-    ARM64
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud" class="md-nav__link">
-    Cloud
+  <a href="#local" class="md-nav__link">
+    Local
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
+  <a href="#gitlab-and-gitlab-cicd" class="md-nav__link">
+    GitLab and GitLab CI/CD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-and-github-actions" class="md-nav__link">
+    GitHub and Github Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    Decision
   </a>
   
 </li>
@@ -596,18 +602,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../20210311-repository_cicd/" title="2021-03-11 Repository and CI/CD" class="md-nav__link">
-      2021-03-11 Repository and CI/CD
-    </a>
   </li>
 
         
@@ -720,35 +714,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#home-cluster" class="md-nav__link">
-    Home Cluster
-  </a>
-  
-    <nav class="md-nav" aria-label="Home Cluster">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#arm64" class="md-nav__link">
-    ARM64
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud" class="md-nav__link">
-    Cloud
+  <a href="#local" class="md-nav__link">
+    Local
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
+  <a href="#gitlab-and-gitlab-cicd" class="md-nav__link">
+    GitLab and GitLab CI/CD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-and-github-actions" class="md-nav__link">
+    GitHub and Github Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    Decision
   </a>
   
 </li>
@@ -769,30 +757,19 @@
                   
                 
                 
-                <h1 id="infrastructure">Infrastructure</h1>
-<p><img src="https://bloghqv.blob.core.windows.net/viethoangme/20210309-infrastructure.jpg" alt="header" width="600"/></p>
+                <h1 id="repository-and-cicd">Repository and CI/CD</h1>
+<p><img src="https://bloghqv.blob.core.windows.net/viethoangme/20210311-repository_cicd.jpg" alt="header" width="600"/></p>
 <h2 id="introduction">Introduction</h2>
-<p>The primary infrastructure driver is using <a href="https://kubernetes.io/">Kubernetes</a> to deploy, scale, and manage both the Dominoes system and the development and maintenance of it. Some examples of applications or services deployed to Kubernetes are</p>
-<ul>
-<li>Database</li>
-<li>CI/CD runners</li>
-<li>Logs Collection</li>
-<li>APM</li>
-</ul>
-<p>I would like to keep the cost as low as possible.</p>
-<h2 id="home-cluster">Home Cluster</h2>
-<p>I bought an 8 GB <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">Raspberry Pi 4</a> for the specific purpose of running a K8s cluster back in mid-2020. Instead of the full Kubernetes, I had it run <a href="https://k3s.io/">K3s</a>. I enjoyed the process, but there were a few issues with it.</p>
-<h3 id="arm64">ARM64</h3>
-<p>The Raspberry Pi 4 uses an arm64 chip. And some popular apps, containers, and Helm charts do not support ARM.  Some examples are</p>
-<ul>
-<li>SonarQube</li>
-<li>GitLab Runner</li>
-</ul>
-<p>I would love to run my K8s cluster on a few local Raspberry Pis, but I can easily see myself bogged down for weeks on setting it up and getting it to run  various applications and services.</p>
-<h2 id="cloud">Cloud</h2>
-<p>All the major cloud providers has some sort of managed Kubernetes cluster. I'm most interested in <a href="https://www.digitalocean.com/products/kubernetes/">Digital Ocean</a>. It's cheap and integrates with GitLab's core components, another piece I was interested in working with.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>I'm leaning toward starting with Digital Ocean and determining if it fits my need and budget. You'll see plenty of more blog posts on this topic. Maybe I'll build a retro gaming machine with my Raspberry Pi....</p>
+<p>The next step is to figure where to store the source code. And with the two major players having their own CI/CD, lets add that to the mix.</p>
+<h2 id="local">Local</h2>
+<p>One option is running my own git server and CI/CD locally. Setting up a <a href="https://www.synology.com/en-global/knowledgebase/DSM/help/Git/git">Git server on a Synology NAS</a> is simple. Then add something like <a href="https://www.jetbrains.com/teamcity/">TeamCity</a> for CI/CD. </p>
+<p>The downside of hosting my own Git Server is I'll lose the collaboration coding that a hosted site brings as well as some project management tools. </p>
+<h2 id="gitlab-and-gitlab-cicd">GitLab and GitLab CI/CD</h2>
+<p>My last few corporate projects use <a href="https://gitlab.com/">GitLab</a> and its <a href="https://docs.gitlab.com/ee/ci/">CI/CD</a>. I've had good experiences with their CI/CD. It's powerful and flexible.</p>
+<h2 id="github-and-github-actions">GitHub and Github Actions</h2>
+<p>The other player I'm looking at is <a href="https://github.com/">GitHub</a> and their <a href="https://docs.github.com/en/actions">Github Actions</a>. I have no experience in Github Actions as it's relatively new. But it sounds interesting and should be comparable to GitLab CI/CD</p>
+<h2 id="decision">Decision</h2>
+<p>I've decided to go with GitHub. Learning more about GitHub Actions should compliment my existing CI/CD skill set and allows me to compare and contrast the two major players. </p>
                 
               
               
@@ -801,7 +778,7 @@
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://www.viethoang.me/dominoes/blogs/20210309-infrastructure/",this.page.identifier="/dominoes/blogs/20210309-infrastructure/"};!function(){var e=document,i=e.createElement("script");i.src="//viethoang-me.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+  <script>var disqus_config=function(){this.page.url="https://www.viethoang.me/dominoes/blogs/20210311-repository_cicd/",this.page.identifier="/dominoes/blogs/20210311-repository_cicd/"};!function(){var e=document,i=e.createElement("script");i.src="//viethoang-me.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -815,7 +792,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../20210308-structure/" title="2021-03-08 Structure" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../20210309-infrastructure/" title="2021-03-09 Infrastructure" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -824,19 +801,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                2021-03-08 Structure
+                2021-03-09 Infrastructure
               </div>
             </div>
           </a>
         
         
-          <a href="../20210311-repository_cicd/" title="2021-03-11 Repository and CI/CD" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../docs/functional-requirements/" title="Functional Requirements" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2021-03-11 Repository and CI/CD
+                Functional Requirements
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
