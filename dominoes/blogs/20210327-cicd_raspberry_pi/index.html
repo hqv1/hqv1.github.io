@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://www.viethoang.me/dominoes/blogs/20210313-milestone_1/">
+        <link rel="canonical" href="https://www.viethoang.me/dominoes/blogs/20210327-cicd_raspberry_pi/">
       
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>2021-03-13 Milestone 1 - Viet Hoang</title>
+        <title>2021-03-27 CI/CD with Raspberry Pi - Viet Hoang</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#milestone-1" class="md-skip">
+        <a href="#cicd-with-raspberry-pi" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              2021-03-13 Milestone 1
+              2021-03-27 CI/CD with Raspberry Pi
             
           </span>
         </div>
@@ -575,67 +575,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        2021-03-13 Milestone 1
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="2021-03-13 Milestone 1" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../20210313-milestone_1/" title="2021-03-13 Milestone 1" class="md-nav__link">
       2021-03-13 Milestone 1
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#milestone" class="md-nav__link">
-    Milestone
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tasks" class="md-nav__link">
-    Tasks
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -667,11 +611,121 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../20210327-cicd_raspberry_pi/" title="2021-03-27 CI/CD with Raspberry Pi" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        2021-03-27 CI/CD with Raspberry Pi
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="2021-03-27 CI/CD with Raspberry Pi" class="md-nav__link md-nav__link--active">
       2021-03-27 CI/CD with Raspberry Pi
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-cluster-setup" class="md-nav__link">
+    Kubernetes Cluster Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Kubernetes Cluster Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cgroup" class="md-nav__link">
+    cgroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addons" class="md-nav__link">
+    Addons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-access" class="md-nav__link">
+    External access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    GitHub Actions
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#container-registry" class="md-nav__link">
+    Container Registry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-image" class="md-nav__link">
+    Docker Image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-to-kubernetes" class="md-nav__link">
+    Deploy to Kubernetes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -784,15 +838,69 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#milestone" class="md-nav__link">
-    Milestone
+  <a href="#kubernetes-cluster-setup" class="md-nav__link">
+    Kubernetes Cluster Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Kubernetes Cluster Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cgroup" class="md-nav__link">
+    cgroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addons" class="md-nav__link">
+    Addons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-access" class="md-nav__link">
+    External access
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tasks" class="md-nav__link">
-    Tasks
+  <a href="#github-actions" class="md-nav__link">
+    GitHub Actions
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#container-registry" class="md-nav__link">
+    Container Registry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-image" class="md-nav__link">
+    Docker Image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-to-kubernetes" class="md-nav__link">
+    Deploy to Kubernetes
   </a>
   
 </li>
@@ -813,32 +921,34 @@
                   
                 
                 
-                <h1 id="milestone-1">Milestone 1</h1>
-<p><img src="https://bloghqv.blob.core.windows.net/viethoangme/20210313-milestone1.jpg" alt="header" width="600"/></p>
+                <h1 id="cicd-with-raspberry-pi">CI/CD with Raspberry Pi</h1>
+<p><img src="https://bloghqv.blob.core.windows.net/viethoangme/20210327-cicd_raspberry_pi.jpg" alt="header" width="400"/></p>
 <h2 id="introduction">Introduction</h2>
-<p>Let's recap where we are right now.</p>
-<ul>
-<li>Architecture Structure is complete</li>
-<li>We'll use GitHub as our repository, CI/CD, and project management tool</li>
-<li>System will be hosted on a Digital Ocean managed Kubernetes cluster</li>
-</ul>
-<p>This should give us enough to map out our first milestone. </p>
-<h2 id="milestone">Milestone</h2>
-<p>At the end of our first milestone, I want to be able to deploy and test our Rest API in a development environment on our Kubernetes cluster. The REST API will only have one GET endpoint that will return "Hello World". To get here though, there's a lot to do.</p>
-<h2 id="tasks">Tasks</h2>
-<ul>
-<li>Create a Dominoes Project Group and Rest API project in GitHub</li>
-<li>Add this milestone and these tasks into the Github Project Management</li>
-<li>Create a simple Rest API with one GET endpoint</li>
-<li>Dockerize the application</li>
-<li>Push to GitHub</li>
-<li>Sign up to Digital Ocean and create a managed Kubernetes cluster</li>
-<li>Setup CI/CD to the Kubernetes cluster</li>
-<li>Create a public endpoint</li>
-<li>Secure the public endpoint</li>
-<li>Verify the endpoint works</li>
-</ul>
-<p>That's a lot of tasks. Let's get at them!</p>
+<p>My Raspberry Pi has gone through a few stages; first as a game emulator, then a media center, a Kubernetes cluster, a dust bin, and now back to a Kubernetes cluster/Development Tools Box. The setup this time went a lot more smoothly than the first time. Let's go over the steps.</p>
+<h2 id="kubernetes-cluster-setup">Kubernetes Cluster Setup</h2>
+<p>I installed <a href="https://ubuntu.com/raspberry-pi">Ubuntu Server ARM64</a> onto the Raspberry Pi. "Installed" is a strong word as all it required was installing the Raspberry Pi Imager, picking the OS, flashing the SD card, and inserting it into the Pi. I choose Ubuntu Server because I'm expecting my Raspberry Pi to be a server for all sorts of applications and Ubuntu has more support than Raspbian. </p>
+<p>One additional benefit of using Ubuntu Server is that Canonical created a simple K8s cluster called <a href="https://microk8s.io/">MicroK8s</a>. It's simple to set up but requires an OS that supports <a href="https://snapcraft.io/">snaps</a>.</p>
+<h3 id="cgroup">cgroup</h3>
+<p>The one hiccup is cgroup is required but isn't enabled by default. This <a href="https://askubuntu.com/questions/1189480/raspberry-pi-4-ubuntu-19-10-cannot-enable-cgroup-memory-at-boostrap">page</a> describes the step in enabling cgroup.</p>
+<h3 id="addons">Addons</h3>
+<p>The default version of MicroK8s is very lightweight. There are plenty of <a href="https://microk8s.io/docs/addons">addons</a> to spice it up. I installed <code>dashboard</code>, <code>dns</code>, <code>helm3</code>, and <code>ingress</code>. Also, <code>fluentd</code>, <code>metrics-server</code>, and <code>prometheus</code> sounds interesting and hopefully I can try them out later. </p>
+<h2 id="external-access">External access</h2>
+<p>The GitHub agent needs to be able to  deploy my applications to the Kubernetes cluster, so I need to provide external access. The one gotcha is the Kubernete's certificate doesn't know my external IP address and clients will get warnings about possible invalid certificate when authenticating. To add the external IP address, check out this <a href="https://stackoverflow.com/questions/63451290/microk8s-devops-unable-to-connect-to-the-server-x509-certificate-is-valid-f">post</a>. Make sure the IP id is greater than 100. </p>
+<h2 id="github-actions">GitHub Actions</h2>
+<p>The updated <a href="https://github.com/hqv1/dominoes-api/commit/4eea47a04765cccab6d6537f3c4acc5291e08e52">GitHub Action file</a> shows all the changes to get my CI/CD up and running. </p>
+<p>Wherever possible, I'm using the GitHub action instead of executing the underlying commands. For example, using <code>Azure/k8s-deploy@v1.4</code> instead of executing <code>kubectl apply ...</code>. The Actions provides setup and teardown and I wanted to learned how to use actions. All of these actions are open sourced so I can jump into the scripts if I needed to.</p>
+<h3 id="container-registry">Container Registry</h3>
+<p>Instead of DigitalOcean's container registry, I'm using DockerHub. The free plan is limited to 2 private repository and 500 megs but that should be enough for this project. GitHub has their on container registry, but it's in beta and I couldn't get it enabled. There's also the option of using <a href="https://microk8s.io/docs/registry-built-in">MicroK8's built-in registry</a>. </p>
+<h3 id="docker-image">Docker Image</h3>
+<p>The Kubernetes cluster is running on ARM64 so the container image must be built for ARM64. I also wanted an AMD64 image built in case I wanted to pull the image and run it locally on my laptop. Fortunately, there's an <a href="https://github.com/docker/build-push-action">action</a> for this. </p>
+<p>In addition, I wanted to the tag the image with the commit SHA instead of using <code>latest</code>. Creating and using variables isn't simple. This does require me to checkout the branch first. Otherwise I wouldn't need to checkout the branch first because <code>build-push-action</code> will do the checkout, build, and push for you.</p>
+<h2 id="deploy-to-kubernetes">Deploy to Kubernetes</h2>
+<p>There's two actions to deploy to the Kubernetes cluster; setting up the Kubernetes context and then deploying using the manifest file.</p>
+<p>And after a few days of work, here's the end result.</p>
+<p><a href="https://bloghqv.blob.core.windows.net/viethoangme/deployment_to_local_k8s.png">
+      <img src="https://bloghqv.blob.core.windows.net/viethoangme/deployment_to_local_k8s.png" alt="header" />
+</a></p>
+<p>Yes, that's 45 runs before getting this to work. Time to celebrate and grab a diet Coke!</p>
                 
               
               
@@ -847,7 +957,7 @@
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://www.viethoang.me/dominoes/blogs/20210313-milestone_1/",this.page.identifier="/dominoes/blogs/20210313-milestone_1/"};!function(){var e=document,i=e.createElement("script");i.src="//viethoang-me.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+  <script>var disqus_config=function(){this.page.url="https://www.viethoang.me/dominoes/blogs/20210327-cicd_raspberry_pi/",this.page.identifier="/dominoes/blogs/20210327-cicd_raspberry_pi/"};!function(){var e=document,i=e.createElement("script");i.src="//viethoang-me.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -861,7 +971,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../20210311-repository_cicd/" title="2021-03-11 Repository and CI/CD" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../20210327-cicd_digitalocean/" title="2021-03-27 CI/CD with DigitalOcean" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -870,19 +980,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                2021-03-11 Repository and CI/CD
+                2021-03-27 CI/CD with DigitalOcean
               </div>
             </div>
           </a>
         
         
-          <a href="../20210314-net/" title="2021-03-14 .NET and IDE" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../docs/functional-requirements/" title="Functional Requirements" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2021-03-14 .NET and IDE
+                Functional Requirements
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
