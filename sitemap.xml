@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://www.viethoang.me/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/software/net/blog/20200623_dotnet_docker_azure_keyvault/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/software/java/blog/20200629_java_intellij_gradle_jdk_versions/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/software/net/libraries/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210223-introduction/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210226-requirements/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210227-characteristics/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210303-components/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210308-structure/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210309-infrastructure/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210311-repository_cicd/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210313-milestone_1/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/blogs/20210314-net/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://www.viethoang.me/dominoes/blogs/20210327-cicd_digitalocean/</loc>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/docs/functional-requirements/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/docs/architecture-characteristics/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.viethoang.me/dominoes/docs/architecture-structure/</loc>
-     <lastmod>2021-03-14</lastmod>
+     <lastmod>2021-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
