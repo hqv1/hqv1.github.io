@@ -891,6 +891,12 @@
 <p>Fortunately, I had an old gaming computer laying around. I installed Ubuntu Desktop on it (Server didn't boot up for me) and I'm a pro at installing MicroK8s now. I'm hoping it can handle the workload, but I can always add in additional computers to the cluster. And save on my heating bill!</p>
 <h2 id="kafka-on-kubernetes">Kafka on Kubernetes</h2>
 <p>It was also easy to install <a href="https://bitnami.com/stack/kafka/helm">Kafka using Helm chart</a>. I wanted something simple to get up and running. I'll probably move to the <a href="https://github.com/confluentinc/cp-helm-charts">Confluent Platform</a> at some point to get Schema Registry.</p>
+<p>By default, the Kafka cluster is only reachable within the Kubernetes cluster. There's a few ways to provide <a href="https://github.com/bitnami/charts/tree/master/bitnami/kafka/#accessing-kafka-brokers-from-outside-the-cluster">external access</a>, but I found this to be the easiest way if you only have one Kafka broker.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --set externalAccess.enabled=true --set externalAccess.service.type=NodePort --set externalAccess.service.nodePorts[0]=&#39;{port}&#39; --set externalAccess.service.domain={internal-ip-address} my-kafka bitnami/kafka
+</code></pre></div>
+
+
+<p>I needed to add <code>externalAccess.service.domain</code> and use the internal ip address of the Kubernetes cluster. Otherwise the broker will try to access the external listener by the public IP address and I didn't open it up.  </p>
 <p>To get a Kafka client pod up and running, execute the following commands.</p>
 <div class="codehilite"><pre><span></span><code>kubectl run my-kafka-client --restart=&#39;Never&#39; --image docker.io/bitnami/kafka:2.7.0-debian-10-r109 --namespace {namespace} --command -- sleep infinity
 
