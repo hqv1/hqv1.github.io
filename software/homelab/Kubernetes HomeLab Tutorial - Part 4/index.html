@@ -9,21 +9,21 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://www.viethoang.me/software/net/blog/20200623_dotnet_docker_azure_keyvault/">
+        <link rel="canonical" href="https://www.viethoang.me/software/homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%204/">
       
       
-      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.0">
     
     
       
-        <title>2020-06-23 Docker and Azure KeyVault - Viet Hoang</title>
+        <title>K8s HomeLab Tutorial 4 - EFK - Viet Hoang</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6e35a1a6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e35a1a6.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#containerized-web-api-and-accessing-azure-key-vault" class="md-skip">
+        <a href="#kubernetes-homelab-tutorial-part-4-logging-with-efk" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              2020-06-23 Docker and Azure KeyVault
+              K8s HomeLab Tutorial 4 - EFK
             
           </span>
         </div>
@@ -146,7 +146,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Home
       </a>
     
@@ -162,7 +162,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../../net/blog/20200623_dotnet_docker_azure_keyvault/" class="md-tabs__link">
           Blogs
         </a>
       
@@ -177,7 +177,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../libraries/" class="md-tabs__link">
+        <a href="../../net/libraries/" class="md-tabs__link md-tabs__link--active">
           Guides
         </a>
       
@@ -198,7 +198,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../../dominoes/blogs/20210223-introduction/" class="md-tabs__link">
+        <a href="../../../dominoes/blogs/20210223-introduction/" class="md-tabs__link">
           Dominoes
         </a>
       
@@ -241,7 +241,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Home" class="md-nav__link">
+    <a href="../../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -251,12 +251,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Blogs
@@ -278,12 +276,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
     
     <label class="md-nav__link" for="nav-2-1">
       Dotnet
@@ -305,80 +301,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        2020-06-23 Docker and Azure KeyVault
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="2020-06-23 Docker and Azure KeyVault" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../net/blog/20200623_dotnet_docker_azure_keyvault/" title="2020-06-23 Docker and Azure KeyVault" class="md-nav__link">
       2020-06-23 Docker and Azure KeyVault
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gotchas" class="md-nav__link">
-    Gotchas
-  </a>
-  
-    <nav class="md-nav" aria-label="Gotchas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#azure-managed-identity-doesnt-work-inside-a-local-docker-container" class="md-nav__link">
-    Azure Managed Identity doesn't work inside a local Docker container
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -418,7 +345,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../java/blog/20200629_java_intellij_gradle_jdk_versions/" title="2020-06-29 Gradle JDK version mismatch" class="md-nav__link">
+    <a href="../../java/blog/20200629_java_intellij_gradle_jdk_versions/" title="2020-06-29 Gradle JDK version mismatch" class="md-nav__link">
       2020-06-29 Gradle JDK version mismatch
     </a>
   </li>
@@ -438,10 +365,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Guides
@@ -465,7 +394,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../libraries/" title=".NET Libraries" class="md-nav__link">
+    <a href="../../net/libraries/" title=".NET Libraries" class="md-nav__link">
       .NET Libraries
     </a>
   </li>
@@ -475,10 +404,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
     
     <label class="md-nav__link" for="nav-3-2">
       Home Lab
@@ -502,7 +433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%201/" title="K8s HomeLab Tutorial 1 - Kubernetes" class="md-nav__link">
+    <a href="../Kubernetes%20HomeLab%20Tutorial%20-%20Part%201/" title="K8s HomeLab Tutorial 1 - Kubernetes" class="md-nav__link">
       K8s HomeLab Tutorial 1 - Kubernetes
     </a>
   </li>
@@ -514,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%202/" title="K8s HomeLab Tutorial 2 - GitHub" class="md-nav__link">
+    <a href="../Kubernetes%20HomeLab%20Tutorial%20-%20Part%202/" title="K8s HomeLab Tutorial 2 - GitHub" class="md-nav__link">
       K8s HomeLab Tutorial 2 - GitHub
     </a>
   </li>
@@ -526,7 +457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%203/" title="K8s HomeLab Tutorial 3 - Kafka" class="md-nav__link">
+    <a href="../Kubernetes%20HomeLab%20Tutorial%20-%20Part%203/" title="K8s HomeLab Tutorial 3 - Kafka" class="md-nav__link">
       K8s HomeLab Tutorial 3 - Kafka
     </a>
   </li>
@@ -536,11 +467,81 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%204/" title="K8s HomeLab Tutorial 4 - EFK" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        K8s HomeLab Tutorial 4 - EFK
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="K8s HomeLab Tutorial 4 - EFK" class="md-nav__link md-nav__link--active">
       K8s HomeLab Tutorial 4 - EFK
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#port-forwarding" class="md-nav__link">
+    Port Forwarding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-index" class="md-nav__link">
+    Creating an index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discover" class="md-nav__link">
+    Discover
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -550,7 +551,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%205/" title="K8s HomeLab Tutorial 5 - Prometheus" class="md-nav__link">
+    <a href="../Kubernetes%20HomeLab%20Tutorial%20-%20Part%205/" title="K8s HomeLab Tutorial 5 - Prometheus" class="md-nav__link">
       K8s HomeLab Tutorial 5 - Prometheus
     </a>
   </li>
@@ -647,7 +648,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210223-introduction/" title="2021-02-23 Introduction" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210223-introduction/" title="2021-02-23 Introduction" class="md-nav__link">
       2021-02-23 Introduction
     </a>
   </li>
@@ -659,7 +660,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210226-requirements/" title="2021-02-26 Requirements" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210226-requirements/" title="2021-02-26 Requirements" class="md-nav__link">
       2021-02-26 Requirements
     </a>
   </li>
@@ -671,7 +672,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210227-characteristics/" title="2021-02-28 Characteristics" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210227-characteristics/" title="2021-02-28 Characteristics" class="md-nav__link">
       2021-02-28 Characteristics
     </a>
   </li>
@@ -688,7 +689,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210303-components/" title="2021-03-03 Components" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210303-components/" title="2021-03-03 Components" class="md-nav__link">
       2021-03-03 Components
     </a>
   </li>
@@ -700,7 +701,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210308-structure/" title="2021-03-08 Structure" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210308-structure/" title="2021-03-08 Structure" class="md-nav__link">
       2021-03-08 Structure
     </a>
   </li>
@@ -712,7 +713,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210309-infrastructure/" title="2021-03-09 Infrastructure" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210309-infrastructure/" title="2021-03-09 Infrastructure" class="md-nav__link">
       2021-03-09 Infrastructure
     </a>
   </li>
@@ -724,7 +725,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210311-repository_cicd/" title="2021-03-11 Repository and CI/CD" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210311-repository_cicd/" title="2021-03-11 Repository and CI/CD" class="md-nav__link">
       2021-03-11 Repository and CI/CD
     </a>
   </li>
@@ -736,7 +737,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210313-milestone_1/" title="2021-03-13 Milestone 1" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210313-milestone_1/" title="2021-03-13 Milestone 1" class="md-nav__link">
       2021-03-13 Milestone 1
     </a>
   </li>
@@ -748,7 +749,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210314-net/" title="2021-03-14 .NET and IDE" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210314-net/" title="2021-03-14 .NET and IDE" class="md-nav__link">
       2021-03-14 .NET and IDE
     </a>
   </li>
@@ -760,7 +761,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210327-cicd_digitalocean/" title="2021-03-27 CI/CD with DigitalOcean" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210327-cicd_digitalocean/" title="2021-03-27 CI/CD with DigitalOcean" class="md-nav__link">
       2021-03-27 CI/CD with DigitalOcean
     </a>
   </li>
@@ -772,7 +773,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210327-cicd_raspberry_pi/" title="2021-03-27 CI/CD with Raspberry Pi" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210327-cicd_raspberry_pi/" title="2021-03-27 CI/CD with Raspberry Pi" class="md-nav__link">
       2021-03-27 CI/CD with Raspberry Pi
     </a>
   </li>
@@ -784,7 +785,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/blogs/20210408-goodbye_pi/" title="2021-04-08 Goodbye Pi" class="md-nav__link">
+    <a href="../../../dominoes/blogs/20210408-goodbye_pi/" title="2021-04-08 Goodbye Pi" class="md-nav__link">
       2021-04-08 Goodbye Pi
     </a>
   </li>
@@ -826,7 +827,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/docs/functional-requirements/" title="Functional Requirements" class="md-nav__link">
+    <a href="../../../dominoes/docs/functional-requirements/" title="Functional Requirements" class="md-nav__link">
       Functional Requirements
     </a>
   </li>
@@ -838,7 +839,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/docs/architecture-characteristics/" title="Architecture Characteristics" class="md-nav__link">
+    <a href="../../../dominoes/docs/architecture-characteristics/" title="Architecture Characteristics" class="md-nav__link">
       Architecture Characteristics
     </a>
   </li>
@@ -850,7 +851,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../dominoes/docs/architecture-structure/" title="Architecture Structure" class="md-nav__link">
+    <a href="../../../dominoes/docs/architecture-structure/" title="Architecture Structure" class="md-nav__link">
       Architecture Structure
     </a>
   </li>
@@ -892,36 +893,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gotchas" class="md-nav__link">
-    Gotchas
-  </a>
-  
-    <nav class="md-nav" aria-label="Gotchas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#azure-managed-identity-doesnt-work-inside-a-local-docker-container" class="md-nav__link">
-    Azure Managed Identity doesn't work inside a local Docker container
+  <a href="#port-forwarding" class="md-nav__link">
+    Port Forwarding
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-index" class="md-nav__link">
+    Creating an index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discover" class="md-nav__link">
+    Discover
+  </a>
   
 </li>
       
@@ -941,36 +943,41 @@
                   
                 
                 
-                <h1 id="containerized-web-api-and-accessing-azure-key-vault">Containerized Web API and accessing Azure Key Vault</h1>
-<h2 id="context">Context</h2>
-<p>Azure Web App Service allows you to deploy a containerized Web API. This is useful because there's many more ways to host a container app than a .NET Web API; and at some point I may want to try them out. Creating a docker container is easy; just the follow the links below.</p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-3.1">Dockerize an existing ASP.NET Core application</a></li>
-<li><a href="https://github.com/dotnet/dotnet-docker">Microsoft Dotnet Docker tutorial repository</a></li>
-</ul>
-<h2 id="gotchas">Gotchas</h2>
-<p>There was one major gotcha that took me a while to resolve. </p>
-<h3 id="azure-managed-identity-doesnt-work-inside-a-local-docker-container">Azure Managed Identity doesn't work inside a local Docker container</h3>
-<p>This means we can't authenticate to Azure Key Vault using Azure Managed Identity. <a href="https://stackoverflow.com/questions/54880080/azure-managed-identity-from-within-a-docker-container-running-locally">Here's</a> more discussion and workarounds.</p>
-<p>The way to get around it is to provide the app with your Azure Token. You'll need to the following.</p>
-<ul>
-<li>Install <a href="https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest">Azure CLI</a> and <a href="https://stedolan.github.io/jq/">jq</a></li>
-<li>Log into azure : <code>az login</code></li>
-<li>Get your key vault access token:  <code>az account get-access-token --resource=https://vault.azure.net | jq -r .accessToken</code></li>
-<li>Add the token somewhere so your app can use it. I added the token in <code>appsettings.Development.json</code> because it's only needed for development. In production, the container will run in Azure Web App Service and it'll be able to authenticate through MSI.</li>
-<li>Implement reading the token and using it to create the <code>KeyVaultClient</code>. Here's a sample code.</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="kt">var</span> <span class="n">accessToken</span> <span class="p">=</span> <span class="n">builtConfig</span><span class="p">[</span><span class="s">&quot;AZURE_KEY_VAULT_ACCESS_TOKEN&quot;</span><span class="p">];</span>
-<span class="k">if</span> <span class="p">(!</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrEmpty</span><span class="p">(</span><span class="n">accessToken</span><span class="p">))</span>
-<span class="p">{</span>
-    <span class="n">logger</span><span class="p">.</span><span class="n">Debug</span><span class="p">(</span><span class="s">&quot;Using Access Token from Environment variable to access Key Vault&quot;</span><span class="p">);</span>
-    <span class="n">keyVaultClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">KeyVaultClient</span><span class="p">((</span><span class="kt">string</span> <span class="n">_</span><span class="p">,</span> <span class="kt">string</span> <span class="n">__</span><span class="p">,</span> <span class="kt">string</span> <span class="n">___</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">Task</span><span class="p">.</span><span class="n">FromResult</span><span class="p">(</span><span class="n">accessToken</span><span class="p">));</span>
-<span class="p">}</span>
+                <h1 id="kubernetes-homelab-tutorial-part-4-logging-with-efk">Kubernetes HomeLab Tutorial - Part 4 - Logging with EFK</h1>
+<p><img src="https://bloghqv.blob.core.windows.net/viethoangme/Kubernetes HomeLab Tutorial - Part 4-logs.jpg" alt="header" width="600"/></p>
+<h2 id="introduction">Introduction</h2>
+<p>Let's continue on our journey and install a logging framework. This allows us to consolidated all of our logs into one central location. We'll be using EFK. EFK stands for <a href="https://www.elastic.co/guide/en/kibana/current/discover.html">ElasticSearch-Fluentd-Kibana</a>. It's a logging and monitoring solution.</p>
+<h2 id="installation">Installation</h2>
+<p>To install EFK, enable the addon by running the following command on the Ubuntu system.</p>
+<div class="codehilite"><pre><span></span><code>microk8s enable fluentd
 </code></pre></div>
 
 
-<p>Now that the file <code>appsettings.Development.json</code> contains sensitive information, I removed the file from being tracked in git.</p>
+<p>A bunch of resources are created within the <code>kube-system</code> namespace. Run the command <code>kubectl get services --namespace kube-system</code></p>
+<div class="codehilite"><pre><span></span><code>NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
+...
+elasticsearch-logging       ClusterIP   10.152.183.196   &lt;none&gt;        9200/TCP                 113s
+kibana-logging              ClusterIP   10.152.183.106   &lt;none&gt;        5601/TCP                 113s
+</code></pre></div>
+
+
+<h2 id="port-forwarding">Port Forwarding</h2>
+<p>To access Kibana, we'll use <code>kubectl</code> built in port-forwarding command.</p>
+<div class="codehilite"><pre><span></span><code>kubectl -n kube-system port-forward svc/kibana-logging 8001:5601
+</code></pre></div>
+
+
+<p>In this example, I'm using port <code>8001</code>. Then on your web browser, go to <code>http://localhost:8001/</code> and you should see the Kibana welcome page.</p>
+<h2 id="creating-an-index">Creating an index</h2>
+<p>Go to page <code>http://localhost:8001/app/kibana#/management/kibana/index_pattern?_g=()</code> and create an index pattern. I recommend <code>logstash*</code> so you'll pick up all the indexes. </p>
+<p><a href="https://bloghqv.blob.core.windows.net/viethoangme/Kubernetes HomeLab Tutorial - Part 4 - kibana_index_pattern.PNG">
+    <img src="https://bloghqv.blob.core.windows.net/viethoangme/Kubernetes HomeLab Tutorial - Part 4 - kibana_index_pattern.PNG" alt="header" width="800"/>
+</a></p>
+<h2 id="discover">Discover</h2>
+<p>And that's it. If your application is writing to the console, Fluentd should be picking it up, storing it in ElasticSearch, and you should be able to query for it in Kibana. Simple and nifty.</p>
+<p><a href="https://bloghqv.blob.core.windows.net/viethoangme/Kubernetes HomeLab Tutorial - Part 4 - kibana_discover.PNG">
+    <img src="https://bloghqv.blob.core.windows.net/viethoangme/Kubernetes HomeLab Tutorial - Part 4 - kibana_discover.PNG" alt="header" width="800"/>
+</a></p>
                 
               
               
@@ -979,7 +986,7 @@
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://www.viethoang.me/software/net/blog/20200623_dotnet_docker_azure_keyvault/",this.page.identifier="/software/net/blog/20200623_dotnet_docker_azure_keyvault/"};!function(){var e=document,i=e.createElement("script");i.src="//viethoang-me.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+  <script>var disqus_config=function(){this.page.url="https://www.viethoang.me/software/homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%204/",this.page.identifier="/software/homelab/Kubernetes%20HomeLab%20Tutorial%20-%20Part%204/"};!function(){var e=document,i=e.createElement("script");i.src="//viethoang-me.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -993,7 +1000,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../../.." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Kubernetes%20HomeLab%20Tutorial%20-%20Part%203/" title="K8s HomeLab Tutorial 3 - Kafka" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1002,19 +1009,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                K8s HomeLab Tutorial 3 - Kafka
               </div>
             </div>
           </a>
         
         
-          <a href="../../../java/blog/20200629_java_intellij_gradle_jdk_versions/" title="2020-06-29 Gradle JDK version mismatch" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Kubernetes%20HomeLab%20Tutorial%20-%20Part%205/" title="K8s HomeLab Tutorial 5 - Prometheus" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2020-06-29 Gradle JDK version mismatch
+                K8s HomeLab Tutorial 5 - Prometheus
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1063,15 +1070,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.a14cc5fd.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a14cc5fd.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "../../../..",
+          base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.7a2ea5ba.min.js"
+            worker: "../../../assets/javascripts/worker/search.7a2ea5ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
