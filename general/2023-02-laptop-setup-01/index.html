@@ -17,7 +17,7 @@
         <link rel="next" href="../2023-02-laptop-setup-02/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
     
     
       
@@ -25,10 +25,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.113286f1.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -176,7 +176,7 @@
     
       
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
@@ -412,6 +412,68 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2023-02-laptop-setup-03/" class="md-nav__link">
+        2023-02 Linux Laptop Software
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/2023-02-python-setup/" class="md-nav__link">
+        2023-02 Python Setup
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -487,25 +549,24 @@
                   
 
 
-
 <h1 id="the-year-of-linux-on-my-laptop-part-1">The year of Linux on my Laptop: Part 1</h1>
 <p><img src="https://user-images.githubusercontent.com/26342818/218837891-e58e1cca-a214-4c07-8499-0c515b904f9f.jpg" alt="ASUS ROG Zephyrus GA402RJ" width="800"></p>
 <h2 id="my-old-laptop">My Old Laptop</h2>
-<p>My primary laptop for the last few years has been an 6 years old Dell. It was getting a little long in the tooth and running slow on Windows 11, so a year back I decided to give Linux a try. And it was great! I've been using it as a development system and Linux Mint gave this dusty laptop a second life. There were a few downsides though.</p>
+<p>My primary laptop for the last few years has been a 6 years old Dell. It was getting a little long in the tooth and running slow on Windows 11, so a year back I decided to give Linux a try. And it was great! I've been using it as a development system and Linux Mint gave this dusty laptop a second life. There were a few downsides though.</p>
 <ul>
 <li>Closing the lid didn't suspend the laptop. Many times I would come back to a steaming hot laptop with no battery life left. This may be a configuration issue, but I haven't researched it.</li>
-<li>System doesn't suspend on its own. I need to manually suspend the computer. Again, this may be a fix, but I haven't looked.</li>
+<li>The system doesn't suspend on its own. I need to manually suspend the computer. Again, this may be a fix, but I haven't looked.</li>
 <li>Battery life isn't great. I'll probably get 3.5 hours on my normal workflow.</li>
-<li>Not a gaming laptop. I primary use the laptop for development work, so this wasn't a major issue...till now.</li>
+<li>Not a gaming laptop. I primarily use the laptop for development work, so this wasn't a major issue...till now.</li>
 </ul>
 <h2 id="a-new-laptop-appears">A New Laptop Appears</h2>
 <p>I'm planning a trip to India in a few months and wanted to bring a laptop to develop, play games, and watch movies without having to always scramble for power. After a few weeks, I decided on the <a href="https://rog.asus.com/us/laptops/rog-zephyrus/rog-zephyrus-g14-2022-series/">ASUS ROG Zephyrus GA402RJ</a>.</p>
 <ul>
 <li>It had some great reviews from <a href="https://www.ultrabookreview.com/55035-asus-zephyrus-g14-ga402rj-review/">Ultrabook Review</a> and <a href="https://www.theverge.com/23169751/asus-rog-zephyrus-g14-ga402rj-gaming-laptop-review">The Verge</a></li>
 <li>It was on sale at <a href="https://www.bestbuy.com/site/asus-rog-zephyrus-14-wqxga-120hz-gaming-laptop-amd-ryzen-9-16gb-ddr5-memory-amd-radeon-rx-6700s-1tb-pcie-4-0-ssd/6494638.p?skuId=6494638">Best Buy</a></li>
-<li>Its Linux friendly (maybe). There's some content on the web that says that ASUS Zephyrus systems are Linux friendly, though maybe not this GA402RJ system.</li>
+<li>It's Linux-friendly (maybe). Some content on the web says that ASUS Zephyrus systems are Linux-friendly, though maybe not this GA402RJ system.</li>
 </ul>
-<p>More detailed specs are in the reviews but here's some important hardware specs.</p>
+<p>More detailed specs are in the reviews but here are some important hardware specs.</p>
 <table>
 <thead>
 <tr>
@@ -549,17 +610,15 @@
 </tbody>
 </table>
 <h2 id="objective">Objective</h2>
-<p>This series of blogs discuss the process of getting the laptop to be usable as a Linux development and gaming system. This primary for me to understand why I did something unexpected and a checklist for when I inevitably reformat my laptop. But for anyone stumbling onto this, I also hope It's helpful in setting up your system.</p>
+<p>This series of blogs discuss the process of getting the laptop to be usable as a Linux development and gaming system. This is primarily for me to understand why I did something unexpected and a checklist for when I inevitably reformat my laptop. But for anyone stumbling onto this, I also hope It helps set up your system.</p>
 <p>I've broken the collection of blogs into the following pages.</p>
 <ul>
 <li>Intro (you are here)</li>
 <li>Install a Linux Distro, configure drivers, and get the laptop hardware set up</li>
-<li>Install and configure general applications</li>
-<li>Install and configure the development system</li>
-<li>Install and configure the gaming system</li>
+<li>Install and configure general applications, programming apps, and gaming apps</li>
 <li>Final Thoughts</li>
 </ul>
-<p>Sweet! Next step is <a href="../2023-02-laptop-setup-02/">installing a Linux Distro and getting the hardware set up</a>. See you soon.</p>
+<p>Sweet! The next step is <a href="../2023-02-laptop-setup-02/">installing a Linux Distro and getting the hardware set up</a>. See you soon.</p>
 
 
 
@@ -598,7 +657,7 @@
       
     
     <a href="https://github.com/hqv1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
     </a>
   
     
@@ -609,7 +668,7 @@
       
     
     <a href="https://www.linkedin.com/in/v-hoang/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
     </a>
   
 </div>
@@ -623,10 +682,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
       
     
   </body>
